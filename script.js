@@ -57,6 +57,7 @@ for (const x of callClick) {
             date : new Date().toLocaleTimeString()
         }
         history.push(data);
+
     })
 
     // police helpline service
@@ -130,6 +131,78 @@ for (const x of callClick) {
         }
         history.push(data);
     })
+    
+
+    // police helpline service
+    const antiCorruptionEmergencyName = document.getElementById("anti_corruption_service").innerText;
+    const antiCorruptionEmergencyNumber = document.getElementById("anti_corruption_number").innerText;
+
+    document.getElementById("anti_corruption_call_button").addEventListener("click", function(){
+        if(coin >= 20){
+            alert("📞 Calling  " + antiCorruptionEmergencyName + " " + antiCorruptionEmergencyNumber+ ".....");
+        }
+
+        const data  = {
+            name : antiCorruptionEmergencyName,
+            number : antiCorruptionEmergencyNumber,
+            date : new Date().toLocaleTimeString()
+        }
+        history.push(data);
+    })
+    
+
+    // police helpline service
+    const bracEmergencyName = document.getElementById("brac_service").innerText;
+    const bracEmergencyNumber = document.getElementById("brac_number").innerText;
+
+    document.getElementById("brac_call_button").addEventListener("click", function(){
+        if(coin >= 20){
+            alert("📞 Calling  " + bracEmergencyName + " " + bracEmergencyNumber + ".....");
+        }
+
+        const data  = {
+            name : bracEmergencyName,
+            number : bracEmergencyNumber,
+            date : new Date().toLocaleTimeString()
+        }
+        history.push(data);
+    })
+    
+
+    // police helpline service
+    const railEmergencyName = document.getElementById("rail_service").innerText;
+    const railEmergencyNumber = document.getElementById("rail_number").innerText;
+
+    document.getElementById("rail_call_button").addEventListener("click", function(){
+        if(coin >= 20){
+            alert("📞 Calling  " + railEmergencyName + " " + railEmergencyNumber + ".....");
+        }
+
+        const data  = {
+            name : railEmergencyName,
+            number : railEmergencyNumber,
+            date : new Date().toLocaleTimeString()
+        }
+        history.push(data);
+    })
+    
+
+    // police helpline service
+    const electricityEmergencyName = document.getElementById("electricity_service").innerText;
+    const electricityEmergencyNumber = document.getElementById("electricity_number").innerText;
+
+    document.getElementById("electricity_call_button").addEventListener("click", function(){
+        if(coin >= 20){
+            alert("📞 Calling  " + electricityEmergencyName + " " + electricityEmergencyNumber + ".....");
+        }
+
+        const data  = {
+            name : electricityEmergencyName,
+            number : electricityEmergencyNumber,
+            date : new Date().toLocaleTimeString()
+        }
+        history.push(data);
+    })
 
 
 
@@ -184,22 +257,5 @@ for (const x of callClick) {
 
 
     //copy button 
-    const buttons = document.getElementsByClassName("copy_button");
 
-for (const btn of buttons) {
-  btn.addEventListener("click", function () {
-    // grab the parent card of the button
-    const card = this.closest(".card"); 
-    
-    // get the number text inside that card
-    const number = card.querySelector(".service_number").innerText;
-
-    // copy to clipboard
-    navigator.clipboard.writeText(number).then(() => {
-      alert("Emergency Hotline: " + number + " copied ✅");
-    }).catch(err => {
-      console.error("Copy failed", err);
-    });
-  });
-}
 
