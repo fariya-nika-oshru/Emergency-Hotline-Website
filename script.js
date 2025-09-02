@@ -150,9 +150,9 @@ for (const x of callClick) {
     for(const btn of callButtons){
         btn.addEventListener("click", function(){
 
-            historyContainer.innerText = "";
+            if(coin <20 )   return; //this tiny little shit cost my 30 min of time!
 
-            if(coin > 0){
+            historyContainer.innerText = "";
                 for(const data of history){
 
                     const div = document.createElement("div");
@@ -170,15 +170,36 @@ for (const x of callClick) {
                         </div>
                         `
 
-
                     historyContainer.appendChild(div);
                 }
-
-            }
-
-        
-
     })
     }
 
+    //clear history feature
+    document.getElementById("clear_button").addEventListener("click", function(){
+        historyContainer.innerText = "";
+    })
     
+
+
+
+    //copy button 
+    const buttons = document.getElementsByClassName("copy_button");
+
+for (const btn of buttons) {
+  btn.addEventListener("click", function () {
+    // grab the parent card of the button
+    const card = this.closest(".card"); 
+    
+    // get the number text inside that card
+    const number = card.querySelector(".service_number").innerText;
+
+    // copy to clipboard
+    navigator.clipboard.writeText(number).then(() => {
+      alert("Emergency Hotline: " + number + " copied ✅");
+    }).catch(err => {
+      console.error("Copy failed", err);
+    });
+  });
+}
+

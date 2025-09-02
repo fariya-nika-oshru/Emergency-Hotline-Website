@@ -78,7 +78,7 @@
 
 
       <div
-        class=" h-300px border-1 border-gray-200 rounded-xl p-6 shadow-xl"
+        class="card h-300px border-1 border-gray-200 rounded-xl p-6 shadow-xl"
       >
         <div class="flex justify-between items-center mb-2">
           <img
@@ -92,7 +92,7 @@
 
         <h1 class=" font-bold text-2xl mb-2">National Emergency Number</h1>
         <p id="national_service" class=" text-gray-600 mb-4">National Emergency</p>
-        <h1 id="national_number" class="  font-bold text-3xl">999</h1>
+        <h1 id="national_number" class="service_number font-bold text-3xl">999</h1>
         <button
           class="bg-[#f2f2f2] text-gray-500 rounded-lg px-3 py-1 mb-4 mt-2"
         >
@@ -100,8 +100,8 @@
         </button>
 
         <div class="flex mt-4 mx-auto gap-3">
-          <button
-            class="text-gray-500 rounded-md bg-white border-1 border-gray-400 w-full py-1">
+          <button 
+            class="copy_button text-gray-500 rounded-md bg-white border-1 border-gray-400 w-full py-1">
             <i class="fa-regular fa-clone"></i>Copy
           </button>
           <button id="national_call_button" class=" call_button text-white rounded-md bg-green-600 w-full py-1">
@@ -404,14 +404,15 @@
 
           <div>
             <button
-              class=" clear_button rounded-4xl bg-[#00a63e] text-white font-semibold p-3 px-8"> Clear
+            id="clear_button"
+              class="rounded-4xl bg-[#00a63e] text-white font-semibold p-3 px-8"> Clear
             </button>
           </div>
         </div>
 
         <!-- call history tabs -->
          <div id="call_history" >
-          
+
          </div>
 
         <!-- <div id="history_container" class=" flex justify-between items-center bg-gray-100 p-4 my-3 rounded-lg">
