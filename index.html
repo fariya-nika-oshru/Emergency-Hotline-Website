@@ -44,7 +44,7 @@
         <img class="w-[25px] h-[25px]" src="assets/heart.png" alt="" />
       </div>
       <div class="flex justify-center items-center gap-3">
-        <h1 class="coint_count font-bold">100</h1>
+        <h1 class="coin_show font-bold">100</h1>
         <img class="w-[30px] h-[30px]" src="assets/coin.png" alt="" />
       </div>
       <div>
@@ -74,6 +74,9 @@
   <div class="main m-10 flex justify-between mr-0">
     <!-- all helpline goes here -->
     <div class="card-container grid grid-cols-3 gap-5 w-[75vw]">
+
+
+
       <div
         class=" h-300px border-1 border-gray-200 rounded-xl p-6 shadow-xl"
       >
@@ -87,9 +90,9 @@
           
         </div>
 
-        <h1 class="font-bold text-2xl mb-2">National Emergency Number</h1>
-        <p class="text-gray-600 mb-4">National Emergency</p>
-        <h1 class="font-bold text-3xl">999</h1>
+        <h1 class=" font-bold text-2xl mb-2">National Emergency Number</h1>
+        <p id="national_service" class=" text-gray-600 mb-4">National Emergency</p>
+        <h1 id="national_number" class="  font-bold text-3xl">999</h1>
         <button
           class="bg-[#f2f2f2] text-gray-500 rounded-lg px-3 py-1 mb-4 mt-2"
         >
@@ -98,12 +101,10 @@
 
         <div class="flex mt-4 mx-auto gap-3">
           <button
-            class="text-gray-500 rounded-md bg-white border-1 border-gray-400 w-full py-1"
-          >
-            <i class="fa-regular fa-clone"></i>
-            Copy
+            class="text-gray-500 rounded-md bg-white border-1 border-gray-400 w-full py-1">
+            <i class="fa-regular fa-clone"></i>Copy
           </button>
-          <button class="text-white rounded-md bg-green-600 w-full py-1">
+          <button id="national_call_button" class=" call_button text-white rounded-md bg-green-600 w-full py-1">
             <i class="fa-solid fa-phone"></i>
             Call
           </button>
@@ -111,7 +112,7 @@
       </div>
 
       <div
-        class="national h-300px border-1 border-gray-200 rounded-xl p-6 shadow-xl"
+        class=" h-300px border-1 border-gray-200 rounded-xl p-6 shadow-xl"
       >
         <div class="flex justify-between items-center mb-2">
           <img
@@ -122,9 +123,9 @@
           <i class="fa-regular fa-heart"></i>
         </div>
 
-        <h1 class="font-bold text-2xl mb-2">Police Helpline Number</h1>
+        <h1 id="police_service" class="font-bold text-2xl mb-2">Police Helpline Number</h1>
         <p class="text-gray-600 mb-4">Police</p>
-        <h1 class="national-number font-bold text-3xl">999</h1>
+        <h1 id="police_number" class="national-number font-bold text-3xl">999</h1>
         <button
           class="bg-[#f2f2f2] text-gray-500 rounded-lg px-3 py-1 mb-4 mt-2"
         >
@@ -138,7 +139,7 @@
             <i class="fa-regular fa-clone"></i>
             Copy
           </button>
-          <button class="text-white rounded-md bg-green-600 w-full py-1">
+          <button id="police_call_button" class=" call_button text-white rounded-md bg-green-600 w-full py-1">
             <i class="fa-solid fa-phone"></i>
             Call
           </button>
@@ -157,9 +158,9 @@
           <i class="fa-regular fa-heart"></i>
         </div>
 
-        <h1 class="font-bold text-2xl mb-2">Fire Service Number</h1>
+        <h1 id="fire_service" class="font-bold text-2xl mb-2">Fire Service Number</h1>
         <p class="text-gray-600 mb-4">Fire Service</p>
-        <h1 class=" font-bold text-3xl">999</h1>
+        <h1 id="fire_number" class=" font-bold text-3xl">999</h1>
         <button
           class="bg-[#f2f2f2] text-gray-500 rounded-lg px-3 py-1 mb-4 mt-2"
         >
@@ -173,7 +174,7 @@
             <i class="fa-regular fa-clone"></i>
             Copy
           </button>
-          <button class="text-white rounded-md bg-green-600 w-full py-1">
+          <button id="fire_call_button" class="call_button text-white rounded-md bg-green-600 w-full py-1">
             <i class="fa-solid fa-phone"></i>
             Call
           </button>
@@ -192,9 +193,9 @@
           <i class="fa-regular fa-heart"></i>
         </div>
 
-        <h1 class="font-bold text-2xl mb-2">Ambulance Service</h1>
+        <h1 id="ambulance_service" class="font-bold text-2xl mb-2">Ambulance Service</h1>
         <p class="text-gray-600 mb-4">Ambulance</p>
-        <h1 class=" font-bold text-3xl">1994-999999</h1>
+        <h1 id="ambulance_number" class=" font-bold text-3xl">1994-999999</h1>
         <button
           class="bg-[#f2f2f2] text-gray-500 rounded-lg px-3 py-1 mb-4 mt-2"
         >
@@ -208,7 +209,7 @@
             <i class="fa-regular fa-clone"></i>
             Copy
           </button>
-          <button class="text-white rounded-md bg-green-600 w-full py-1">
+          <button id="ambulance_call_button" class="call_button text-white rounded-md bg-green-600 w-full py-1">
             <i class="fa-solid fa-phone"></i>
             Call
           </button>
@@ -227,9 +228,9 @@
           <i class="fa-regular fa-heart"></i>
         </div>
 
-        <h1 class="font-bold text-2xl mb-2">Women & Child Helpline</h1>
+        <h1 id="woman_service" class="font-bold text-2xl mb-2">Women & Child Helpline</h1>
         <p class="text-gray-600 mb-4">Women & Child Helpline</p>
-        <h1 class=" font-bold text-3xl">109</h1>
+        <h1 id="woman_number" class=" font-bold text-3xl">109</h1>
         <button
           class="bg-[#f2f2f2] text-gray-500 rounded-lg px-3 py-1 mb-4 mt-2"
         >
@@ -243,7 +244,7 @@
             <i class="fa-regular fa-clone"></i>
             Copy
           </button>
-          <button class="text-white rounded-md bg-green-600 w-full py-1">
+          <button id="woman_call_button" class="call_button text-white rounded-md bg-green-600 w-full py-1">
             <i class="fa-solid fa-phone"></i>
             Call
           </button>
@@ -278,7 +279,7 @@
             <i class="fa-regular fa-clone"></i>
             Copy
           </button>
-          <button class="text-white rounded-md bg-green-600 w-full py-1">
+          <button class="call_button text-white rounded-md bg-green-600 w-full py-1">
             <i class="fa-solid fa-phone"></i>
             Call
           </button>
@@ -313,7 +314,7 @@
             <i class="fa-regular fa-clone"></i>
             Copy
           </button>
-          <button class="text-white rounded-md bg-green-600 w-full py-1">
+          <button class="call_button text-white rounded-md bg-green-600 w-full py-1">
             <i class="fa-solid fa-phone"></i>
             Call
           </button>
@@ -348,7 +349,7 @@
             <i class="fa-regular fa-clone"></i>
             Copy
           </button>
-          <button class="text-white rounded-md bg-green-600 w-full py-1">
+          <button class="call_button text-white rounded-md bg-green-600 w-full py-1">
             <i class="fa-solid fa-phone"></i>
             Call
           </button>
@@ -383,7 +384,7 @@
             <i class="fa-regular fa-clone"></i>
             Copy
           </button>
-          <button class="text-white rounded-md bg-green-600 w-full py-1">
+          <button class="call_button text-white rounded-md bg-green-600 w-full py-1">
             <i class="fa-solid fa-phone"></i>
             Call
           </button>
@@ -392,8 +393,8 @@
     </div>
 
     <!-- call history goes here -->
-    <div class="call-history w-[25vw] p-5 mx-5 shadow-xl border-1 border-gray-100 rounded-lg">
-      <div class=" ">
+    <div class=" w-[25vw] p-5 mx-5 shadow-xl border-1 border-gray-100 rounded-lg">
+      
         <!-- title part -->
         <div class="History-title flex justify-between gap-8  mb-4">
           <div class="flex justify-center items-center gap-2">
@@ -403,14 +404,18 @@
 
           <div>
             <button
-              class="rounded-4xl bg-[#00a63e] text-white font-semibold p-3 px-8"><span class="copy_count">Clear
+              class=" clear_button rounded-4xl bg-[#00a63e] text-white font-semibold p-3 px-8"> Clear
             </button>
           </div>
         </div>
 
         <!-- call history tabs -->
+         <div id="call_history" >
+          
+         </div>
 
-        <div class="flex justify-between items-center bg-gray-100 p-4 my-3 rounded-lg">
+        <!-- <div id="history_container" class=" flex justify-between items-center bg-gray-100 p-4 my-3 rounded-lg">
+          
             <div >
                 <h1 class="font-bold my-2 text-lg">Fire Service Number</h1>
                 <p class="text-gray-600">999</p>
@@ -421,10 +426,10 @@
             
             
 
-        </div>
+        </div> -->
 
 
-      </div>
+    </div>
     </div>
 
 
