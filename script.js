@@ -257,5 +257,42 @@ for (const x of callClick) {
 
 
     //copy button 
+    const buttons = document.getElementsByClassName("copy_button");
 
+    for (const btn of buttons) {
+        btn.addEventListener("click", function () {
+    // climb up from the button to its parent card container
+        const card = this.parentElement.parentElement;
+
+    // get only the number text inside this card
+        const number = card.querySelector(".service_number").innerText.trim();
+
+    // copy the number to clipboard
+        navigator.clipboard.writeText(number)
+            .then(() => {
+                alert("Emergency Hotline copied ✅\n" + number);
+            })
+            .catch(err => {
+                console.error("Copy failed", err);
+            });
+        });
+    }
+
+
+
+
+
+
+// heart feature section
+let copy = 0; // declare and initialize counter
+
+const copyShow = document.querySelector(".copy_count"); 
+const copyButtons = document.querySelectorAll(".copy_button"); // target the button, not just the <i>
+
+for (const btn of copyButtons) {
+  btn.addEventListener("click", function () {
+    copy++;
+    copyShow.innerText = copy;
+  });
+}
 
