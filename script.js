@@ -283,7 +283,7 @@ for (const x of callClick) {
 
 
 
-// heart feature section
+// call button show section
 let copy = 0; // declare and initialize counter
 
 const copyShow = document.querySelector(".copy_count"); 
